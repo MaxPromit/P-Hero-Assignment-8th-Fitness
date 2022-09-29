@@ -14,3 +14,13 @@
   border: 1px solid saddlebrown;
   height: 100%;
 }
+.activity_btn{
+  margin-top: 80px;
+}
+.activity_btn button{
+  padding: 10px 30px;
+  margin-left: 100px;
+  background-color: lightblue;
+  border: none;
+  border-radius: 3px;
+}

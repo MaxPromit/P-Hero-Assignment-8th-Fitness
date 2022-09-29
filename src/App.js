@@ -22,6 +22,9 @@ function App() {
       <Break></Break>
       <Exercise></Exercise>
       <Breaktime></Breaktime>
+      <div className='activity_btn'>
+      <button>Activity Added</button>
+      </div>
     </div>
     </div>
   );
