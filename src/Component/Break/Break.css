@@ -1,0 +1,14 @@
+.break_container{
+    display: flex;
+    margin-right: 10px;
+    background-color: lightgray;
+}
+.break_container h5{
+    margin: 0px 25px ;
+    padding: 23px 0px;
+
+}
+.break_container h5:hover{
+    color: crimson;
+    cursor: pointer;
+}

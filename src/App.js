@@ -1,5 +1,6 @@
 import './App.css';
 import Activity from './Component/Activity/Activity';
+import Break from './Component/Break/Break';
 import Card from './Component/Card/Card';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
     <div className='activity_container'>
       <h3>Activity Info</h3>
       <Activity></Activity>
+      <Break></Break>
     </div>
     </div>
   );
