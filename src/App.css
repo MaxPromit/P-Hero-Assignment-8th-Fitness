@@ -31,9 +31,13 @@
     display: grid;
     grid-template-columns: 1fr;
   }
+  .product_container{
+    order: 5;
+  }
   .activity_container{
     width: 597px;
     margin-left: 100px;
+    order: 3;
   }
 }
 @media screen and (max-width: 520px) {
@@ -41,9 +45,13 @@
     display: grid;
     grid-template-columns: 1fr;
   }
+  .product_container{
+    order: 5;
+  }
   .activity_container{
     width: 300px;
     margin-left: 60px;
+    order: 3;
   }
 
 }

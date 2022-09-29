@@ -10,7 +10,7 @@ import Exercise from './Component/Exercise/Exercise';
 function App() {
 
   const [products, setProducts] = useState([]);
-  // const [time, setTime] = useState(0)
+  const [time, setTime] = useState(0);
   useEffect(()=>{
     fetch('products.json')
     .then(res => res.json())
@@ -18,9 +18,11 @@ function App() {
   },[])
 
 const handleExerciseTime = (selectedProduct) =>{
-  // const selectProduct = selectedProduct.time;
+  const selectProduct = selectedProduct.time;
+  setTime(time+selectProduct)
+
 }
-  return (
+return (
     <div className='parent_header'>
 
     <div className='product_container'>
@@ -40,7 +42,7 @@ const handleExerciseTime = (selectedProduct) =>{
       <h3>Activity Info</h3>
       <Activity></Activity>
       <Break></Break>
-      <Exercise></Exercise>
+      <Exercise time={time}></Exercise>
       <Breaktime></Breaktime>
       <div className='activity_btn'>
       <button>Activity Added</button>

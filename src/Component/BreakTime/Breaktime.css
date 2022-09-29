@@ -12,3 +12,9 @@
       }
    
 }
+@media screen and (max-width: 780px) {
+    .breaktime{
+        width: 95%;
+      }
+   
+}

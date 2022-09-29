@@ -10,3 +10,8 @@
         width: 286px;
       }
 }
+@media screen and (max-width: 780px) {
+    .extercise_info{
+        width: 95%;
+      }
+}
