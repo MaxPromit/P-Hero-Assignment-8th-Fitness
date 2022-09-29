@@ -20,6 +20,10 @@ function App() {
     .then(res => res.json())
     .then(data => setProducts(data))
   },[])
+  useEffect(()=>{
+    const localStorageItem = localStorage.getItem('time');
+    setBreaking(localStorageItem)
+  },[])
 
 const handleExerciseTime = (selectedProduct) =>{
   const selectProduct = selectedProduct.time;
@@ -27,24 +31,8 @@ const handleExerciseTime = (selectedProduct) =>{
 
 }
 const breakBtnHandler = (secondValue) =>{
-  const value = secondValue;
-
-  const breakTime = localStorage.getItem('break-time');
-  const oldBreakTime = JSON.parse(breakTime);
-  if(oldBreakTime){
-    const isExist = oldBreakTime.find(p=> p === value);
-    if(isExist){
-      const total = parseFloat(isExist)
-      setBreaking(total)
-      return;
-    }else{
-      localStorage.setItem('break-time',JSON.stringify([...oldBreakTime,value]))
-    }
-  }
-  else{
-    localStorage.setItem('break-time',JSON.stringify([value]))
-  }
-  setBreaking(value)
+  setBreaking(secondValue);
+  localStorage.setItem('time',secondValue)
 }
 
 return (
