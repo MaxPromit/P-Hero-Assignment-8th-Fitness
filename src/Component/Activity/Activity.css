@@ -1,0 +1,19 @@
+.user_info{
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    
+}
+.user_img{
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 12px;
+    
+}
+.user_img img{
+    width: 100%;
+    border-radius: 100%;
+}
+.user_bio h3{
+    margin-bottom: -9px;
+}
