@@ -14,6 +14,22 @@ const Activity = () => {
                 <p>Sydne,Australia</p>
                </div>
             </div>
+            <div className='user_health'>
+                <div className='health_info'>
+                <h3>75kg</h3>
+                <p>Weight</p>
+                </div>
+                <div className='health_info'>
+                <h3>6.5</h3>
+                <p>Height</p>
+                </div>
+                <div className='health_info'>
+                <h3>25yrs</h3>
+                <p>Age</p>
+                </div>
+            </div>
+            
+
         </div>
     );
 };
