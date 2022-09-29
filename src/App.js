@@ -26,7 +26,9 @@ const handleExerciseTime = (selectedProduct) =>{
     <div className='product_container'>
       <div className='product_container_title'>
           <h3>Fitness Freak</h3>
-          <h4>Select Today's Exercise</h4>
+         <div className='todays_exercise'>
+         <h4>Select Today's Exercise</h4>
+         </div>
       </div>
       <div className='card_parent'>
         {
