@@ -7,6 +7,8 @@ import Break from './Component/Break/Break';
 import Breaktime from './Component/BreakTime/Breaktime';
 import Card from './Component/Card/Card';
 import Exercise from './Component/Exercise/Exercise';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 function App() {
@@ -34,7 +36,9 @@ const breakBtnHandler = (secondValue) =>{
   setBreaking(secondValue);
   localStorage.setItem('time',secondValue)
 }
-
+const notify =()=>{
+  toast('Wow You Did It')
+}
 return (
     <div className='parent_header'>
 
@@ -59,7 +63,8 @@ return (
       <Exercise time={time}></Exercise>
       <Breaktime breaking={breaking}></Breaktime>
       <div className='activity_btn'>
-      <button>Activity Added</button>
+      <button onClick={notify}>Activity Added</button>
+      <ToastContainer />
       </div>
     </div>
     </div>
