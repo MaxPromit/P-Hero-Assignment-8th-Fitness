@@ -2,15 +2,19 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import './App.css';
 import Activity from './Component/Activity/Activity';
+import Blog from './Component/Blog/Blog';
 import Break from './Component/Break/Break';
 import Breaktime from './Component/BreakTime/Breaktime';
 import Card from './Component/Card/Card';
 import Exercise from './Component/Exercise/Exercise';
 
+
 function App() {
 
   const [products, setProducts] = useState([]);
   const [time, setTime] = useState(0);
+  const [breaking,setBreaking] = useState(0);
+
   useEffect(()=>{
     fetch('products.json')
     .then(res => res.json())
@@ -22,6 +26,27 @@ const handleExerciseTime = (selectedProduct) =>{
   setTime(time+selectProduct)
 
 }
+const breakBtnHandler = (secondValue) =>{
+  const value = secondValue;
+
+  const breakTime = localStorage.getItem('break-time');
+  const oldBreakTime = JSON.parse(breakTime);
+  if(oldBreakTime){
+    const isExist = oldBreakTime.find(p=> p === value);
+    if(isExist){
+      const total = parseFloat(isExist)
+      setBreaking(total)
+      return;
+    }else{
+      localStorage.setItem('break-time',JSON.stringify([...oldBreakTime,value]))
+    }
+  }
+  else{
+    localStorage.setItem('break-time',JSON.stringify([value]))
+  }
+  setBreaking(value)
+}
+
 return (
     <div className='parent_header'>
 
@@ -37,13 +62,14 @@ return (
           products.map(product => <Card key={product.id} product={product} handleExerciseTime={handleExerciseTime}></Card>)
         }
       </div>
+      <Blog></Blog>
     </div>
     <div className='activity_container'>
       <h3>Activity Info</h3>
       <Activity></Activity>
-      <Break></Break>
+      <Break breakBtnHandler={breakBtnHandler}></Break>
       <Exercise time={time}></Exercise>
-      <Breaktime></Breaktime>
+      <Breaktime breaking={breaking}></Breaktime>
       <div className='activity_btn'>
       <button>Activity Added</button>
       </div>
