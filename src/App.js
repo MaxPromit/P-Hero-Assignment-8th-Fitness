@@ -2,6 +2,7 @@ import './App.css';
 import Activity from './Component/Activity/Activity';
 import Break from './Component/Break/Break';
 import Card from './Component/Card/Card';
+import Exercise from './Component/Exercise/Exercise';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <h3>Activity Info</h3>
       <Activity></Activity>
       <Break></Break>
+      <Exercise></Exercise>
     </div>
     </div>
   );
