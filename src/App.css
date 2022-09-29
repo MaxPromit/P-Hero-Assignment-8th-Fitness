@@ -3,7 +3,6 @@
   grid-template-columns: 3fr 1fr;
 }
 .product_container{
-  border: 1px solid seagreen;
   height: 100%;
   margin: 0px 100px;
 }
@@ -11,7 +10,6 @@
   margin-bottom: 100px;
 }
 .activity_container{
-  border: 1px solid saddlebrown;
   height: 100%;
 }
 .activity_btn{
@@ -23,4 +21,25 @@
   background-color: lightblue;
   border: none;
   border-radius: 3px;
+}
+@media screen and (max-width: 778px) {
+  .parent_header{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .activity_container{
+    width: 597px;
+    margin-left: 100px;
+  }
+}
+@media screen and (max-width: 520px) {
+  .parent_header{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .activity_container{
+    width: 300px;
+    margin-left: 60px;
+  }
+
 }

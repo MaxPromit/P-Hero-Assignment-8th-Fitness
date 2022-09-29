@@ -11,7 +11,6 @@ const Break = () => {
                 <h5>20s</h5>
                 <h5>30s</h5>
                 <h5>40s</h5>
-                <h5>50s</h5>
              </div>
 
         </div>

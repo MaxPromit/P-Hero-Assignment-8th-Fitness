@@ -22,3 +22,20 @@
     background-color: skyblue;
     cursor: pointer;
 }
+@media screen and (max-width: 778px) {
+    .card_parent{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+}
+@media screen and (max-width: 520px) {
+    .single_card{
+        margin-left: -35px;
+    }
+    .card_parent{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+}

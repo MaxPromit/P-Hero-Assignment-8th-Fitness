@@ -1,5 +1,4 @@
 import React from 'react';
-import user from '../../image/user.png'
 import './Activity.css'
 
 const Activity = () => {
@@ -7,7 +6,7 @@ const Activity = () => {
         <div>
             <div className='user_info'>
                <div className='user_img'>
-               <img src={user} alt="" />
+               <img src="" alt="" />
                </div>
                <div className='user_bio'>
                <h3>John Doe</h3>

@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "Boxing",
+        "time": 45,
+        "img": "./image/boxing.png",
+        "text": " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae soluta non quasi recusandae dolorem tempora quo reprehenderit ut dignissimos corrupti?"
+      },
+    {
+        "id": 2,
+        "name": "Cycleing",
+        "time": 50,
+        "img": "./image/cycle.png",
+        "text": " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae soluta non quasi recusandae dolorem tempora quo reprehenderit ut dignissimos corrupti?"
+      },
+    {
+        "id": 3,
+        "name": "Dumble",
+        "time": 35,
+        "img": "./image/dumble.png",
+        "text": " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae soluta non quasi recusandae dolorem tempora quo reprehenderit ut dignissimos corrupti?"
+      },
+    {
+        "id": 4,
+        "name": "PushUp",
+        "time": 30,
+        "img": "./image/pushup.png",
+        "text": " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae soluta non quasi recusandae dolorem tempora quo reprehenderit ut dignissimos corrupti?"
+      },
+    {
+        "id": 5,
+        "name": "RopeJump",
+        "time": 20,
+        "img": "./image/ropejump.png",
+        "text": " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae soluta non quasi recusandae dolorem tempora quo reprehenderit ut dignissimos corrupti?"
+      },
+    {
+        "id": 6,
+        "name": "RopeClimbing",
+        "time": 40,
+        "img": "./image/rope.png",
+        "text": " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae soluta non quasi recusandae dolorem tempora quo reprehenderit ut dignissimos corrupti?"
+      }
+]
