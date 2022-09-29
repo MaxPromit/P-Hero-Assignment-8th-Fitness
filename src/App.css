@@ -26,6 +26,14 @@
   margin-top: 10px;
   margin-bottom: -20px;
 }
+.awesome_div{
+  display: flex;
+  align-items: center;
+
+}
+.awesome_div div{
+  margin-right: 10px;
+}
 @media screen and (max-width: 778px) {
   .parent_header{
     display: grid;

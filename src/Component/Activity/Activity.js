@@ -1,12 +1,13 @@
 import React from 'react';
 import './Activity.css'
+import user from '../../user.png'
 
 const Activity = () => {
     return (
         <div>
             <div className='user_info'>
                <div className='user_img'>
-               <img src="" alt="" />
+               <img src={user} alt="" />
                </div>
                <div className='user_bio'>
                <h3>John Doe</h3>

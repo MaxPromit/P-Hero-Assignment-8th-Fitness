@@ -9,6 +9,9 @@ import Card from './Component/Card/Card';
 import Exercise from './Component/Exercise/Exercise';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+
 
 
 function App() {
@@ -44,7 +47,14 @@ return (
 
     <div className='product_container'>
       <div className='product_container_title'>
+        <div className='awesome_div'>
+        <div>
+           <FontAwesomeIcon icon={faShoppingCart} />
+           </div>
+          <div>
           <h3>Fitness Freak</h3>
+          </div>
+        </div>
          <div className='todays_exercise'>
          <h4>Select Today's Exercise</h4>
          </div>
