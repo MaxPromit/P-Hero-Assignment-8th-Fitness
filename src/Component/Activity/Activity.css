@@ -20,6 +20,9 @@
 .user_health{
     display: flex;
     padding: 0px 30px; 
+    background-color: lightblue;
+    border-radius: 2px;
+    ;
 }
 .health_info{
     margin-right: 40px;
